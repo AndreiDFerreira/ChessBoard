@@ -1,0 +1,68 @@
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "inter", sans-serif;
+  background-color: var(--text-color);
+  text-align: center;
+}
+:root {
+  --bg-url: url(./assets/fundo.jpg);
+  --text-color: white;
+  --background-color: black;
+  --background-image: url(./assets/xadrez.jpg);
+}
+#inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#tabuleiro button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#inicio button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tabuleiro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  display: none;
+  
+}
+
+.tabuleiro {
+  width: 400px;
+  height: 400px;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+}
+#desistir {
+  background-color: var(--text-color); 
+}
+#desistir ion-icon{
+font-size: 10px;
+}
+.escondido {
+  display: flex;
+}
+/*TEMPORIZADOR*/
